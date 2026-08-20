@@ -1,0 +1,20 @@
+:root {
+    max-width: 1200px;
+    --spacing:1rem;
+    --sectionspacing:5rem;
+    --radius:12px;
+}
+
+
+.card {
+    border: ;
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    background: wheat;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
