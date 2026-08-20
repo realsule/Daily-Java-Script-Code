@@ -37,9 +37,11 @@
 }
 
 .home {
+ background-color: black;
  padding: auto; 
  text-align: center;
  color: olive;  
+ border-radius: 25px;
 }
 
 .about  {
@@ -62,11 +64,64 @@
 .card {
     justify-content: center;
     display: grid;
+    
 
 }
 
 .container {
 
-  margin-inline: auto;
+margin-inline: auto;
   
+}
+
+section{
+    margin-bottom: 10px;
+}
+
+.contact {
+    text-align: center;
+    background-color: #333;
+    padding: 20px;
+    
+}
+
+.contact h1{
+    color: #e8820c;
+}
+
+.contact form{
+   
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 25px;
+    max-width: 90%;
+    color:#e8820c   
+    
+}
+
+#name,
+#email,
+#message{
+    border-radius: 20px;
+
+}
+
+.contact input,
+.contact textarea{
+    padding: 10px;
+    font-size: medium;
+
+}
+
+.contact textarea{
+    height: auto;
+}
+
+.contact button {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 10px;
 }
