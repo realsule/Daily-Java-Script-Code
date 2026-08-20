@@ -1,21 +1,25 @@
-  document.getElementById('pri-btn').addEventListener('click', function() {
-    // Option A: Alert
-    alert('Button is working!');
-  });
-/*
-document.getElementById('pri-btn').addEventListener('click', function() {
-  // Option B: Change text
-  this.textContent = 'Clicked!';
-}--makes the button text change to "Clicked!" when clicked
-*/
+const form = document.querySelector("#contactForm");
+const formMessage = document.querySelector("#formMessage");
 
+form.addEventListener("submit", function(event) {
 
-document.getElementById('sec-btn').addEventListener('click', function() {
+  event.preventDefault();
+
+  const name = document.querySelector("#name").value;
+  const email = document.querySelector("#email").value;
+  const message = document.querySelector("#message").value;
   
- alert('I love JavaScript!');
-});
+  console.log(name);
+  console.log(email);
+  console.log(message);
 
-document.getElementById('ter-btn').addEventListener('click', function() {
+   if (name === "" || email === "" || message === "") {
+
+    formMessage.textContent = "Please fill in all fields."
+    return;
+  }
+
+  formMessage.textContent = "Message Ready to Send!";
+ 
   
- alert('I love Coding!');
 });
