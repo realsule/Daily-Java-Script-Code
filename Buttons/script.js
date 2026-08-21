@@ -23,3 +23,13 @@ form.addEventListener("submit", function(event) {
  
   
 });
+
+// Select all buttons with the class "alert-btn"
+const alertButtons = document.querySelectorAll(".service-btn");
+
+// Add event listener to each button
+alertButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        alert(`Button "${this.textContent}" was clicked!`);
+    });
+});   
