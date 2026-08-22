@@ -24,12 +24,31 @@ form.addEventListener("submit", function(event) {
   
 });
 
+/* */
 // Select all buttons with the class "alert-btn"
-const alertButtons = document.querySelectorAll(".service-btn");
+// const alertButtons = document.querySelectorAll(".service-btn");
 
-// Add event listener to each button
+/*/ Add event listener to each button
 alertButtons.forEach(button => {
     button.addEventListener('click', function() {
         alert(`Button "${this.textContent}" was clicked!`);
     });
 });   
+*/
+
+
+
+const buttons = document.querySelectorAll(".service-btn")
+
+  buttons.forEach(button => {
+
+    button.addEventListener("click", function(){
+
+      this.textContent = "Paid"
+    });
+  });
+
+  
+
+
+//ADD A POPUP MESSAGE TO CONFIRM PAYMENT

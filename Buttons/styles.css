@@ -30,10 +30,11 @@
 
 .hero-btn {
     
-    color: rgb(156, 156, 49);
-    background-color: black;
+    color: rgb(0, 0, 0);
+    background-color: rgba(5, 184, 255, 0.829);
     border: 2px solid rgb(255, 157, 0);
     border-radius: 50px;
+    margin-bottom: 10px;
 }
 
 .home {
