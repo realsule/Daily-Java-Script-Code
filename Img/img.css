@@ -7,7 +7,7 @@
 
 
 .card {
-    border: ;
+    
     border-radius: var(--radius);
     padding: 1.5rem;
     background: wheat;
@@ -19,3 +19,18 @@
   gap: 1.5rem;
 }
 
+.cart-container {
+  
+    display: inline-block;
+    width: 0 auto;
+    padding: 30px;
+
+}
+
+.cart-badge{
+    background-color: aqua;
+    text-decoration: none;
+    border-radius: 25px;
+    text-decoration: none;
+
+}
