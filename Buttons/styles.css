@@ -187,3 +187,14 @@ section{
     background-color: aqua;
     align-self: center;
 }
+
+.faq{
+    background-color: #e8820c;
+    text-align: center;
+}
+
+.faq h1{
+    color: black;    
+}
+
+
