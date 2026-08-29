@@ -32,16 +32,16 @@
     
     color: rgb(0, 0, 0);
     background-color: rgba(5, 184, 255, 0.829);
-    border: 2px solid rgb(255, 157, 0);
+    border: 2px solid rgb(46, 43, 39);
     border-radius: 50px;
     margin-bottom: 10px;
 }
 
 .home {
- background-color: black;
+ background-color: rgb(224, 130, 15);
  padding: auto; 
  text-align: center;
- color: olive;  
+ color: black;  
  border-radius: 25px;
 }
 
