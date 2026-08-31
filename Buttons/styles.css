@@ -194,7 +194,8 @@ section{
 }
 
 .faq h1{
-    color: black;    
+    color: black;
+    border-color: yellow;    
 }
 
 
