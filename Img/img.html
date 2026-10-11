@@ -3,63 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking System</title>
     <link rel="stylesheet" href="img.css">
-    <title>image</title>
 </head>
 <body>
-
-    <section>
-  <div class="container">
-    <h2>Latest Articles</h2>
-
-    <div class="card-grid">
-
-      <article class="card">
-
-        <img
-            alt="Card"
-            src="https://imgs.search.brave.com/-6RsVPM5LRr3Fo7A3fWmBoPrxGBIKDQbU_6T0cdimUA/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMucGV4ZWxzLmNv/bS9waG90b3MvMzU1/OC9tb3JuaW5nLWJy/ZWFrZmFzdC1vcmFu/Z2UtanVpY2UuanBn/P2NzPXRpbnlzcmdi/JmRwcj0xJnc9NTAw"
-            
-        >
-
-        <div>
-            <h2>
-                We Are One Stop Online Shop
-            </h2>
-
-            <p>
-                INTERNETS FIRST SOLUTION
-            </p>
-        </div>
-
-      </article>
-  
-  <div class="cart-container">
-    <a href="#" class="cart-icon">
-      <i class="fa fa-shopping-cart"></i>
-      <span class="cart-badge" id="cart-count">0</span>
-    </a>
-  </div> 
-
-      
-
-      <article class="card">
-        cart
-      </article>
-
-      <article class="card">
-        ...
-      </article>
-
-    </div>
-  </div>
-</section>
+    <header>
+        <h1>Service Booking System</h1>
+    </header>
+    <main>
+        <section id="services">
+            <h2>Available Services</h2>
 
 
+            <div class="service-card">
 
-<div class="flex flex-col items-center gap-3 text-center"><div class="grid h-14 w-14 place-items-center rounded-full bg-teal-600 text-cream-50 dark:bg-coral-500"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-leaf"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path></svg></div><h3 class="font-display text-lg font-semibold">Fresh Ingredients</h3><p class="max-w-xs text-sm text-teal-700/70 dark:text-cream-100/70">We source locally and prep in small batches daily.</p></div>
-<section>
-    <h1><>
-</section>       
+                <h3>Service 1</h3>
+
+                <img  class="" src="" alt="Screen Print Image">
+                <p>Description: Lorem ipsum dolor sit amet.</p>
+                <p>Fee: $50</p>
+                <button onclick="bookService('service1')">Book Now</button>
+            </div>
+            <div class="service-card">
+                <h3>Service 2</h3>
+                <img src="" alt="Digital Print mACHINE">
+                <p>Description: Lorem ipsum dolor sit amet.</p>
+                <p>Fee: $100</p>
+                <button onclick="bookService('service2')">Book Now</button>
+            </div>
+        </section>
+        <section id="booking-form">
+            <h2>Booking Form</h2>
+            <form id="bookingForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+                <label for="service">Service:</label>
+                <input type="text" id="service" name="service" required>
+                <br><br>
+                <label for="platform">Platform:</label>
+                <select id="platform" name="platform">
+                    <option value="whatsapp">WhatsApp</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="linkedin">LinkedIn</option>
+                </select>
+                <br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="payment">
+            <h2>Payment</h2>
+            <form id="paymentForm">
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" required>
+                <br><br>
+                <label for="paymentMethod">Payment Method:</label>
+                <select id="paymentMethod" name="paymentMethod">
+                    <option value="crypto">Crypto</option>
+                    <option value="mpesa">M-Pesa</option>
+                </select>
+                <br><br>
+                <button type="submit">Pay Now</button>
+            </form>
+        </section>
+
+        <section>
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Service Booking System</p>
+    </footer>
+    <script src="img.js"></script>
 </body>
 </html>
